@@ -1,0 +1,126 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b6c6b2;
+  color: #333;
+}
+
+/* Form container styles */
+.form-container {
+  max-width: 600px; /* Increase the max-width for a wider form */
+  margin: 50px auto; /* Increase margin for more spacing */
+  padding: 40px; /* Increase padding for better spacing */
+  background-color: #fafafa; /* Lighter background color */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased shadow */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form styles */
+h1 {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin bottom for better separation */
+  color: #5ba6d2;
+}
+
+.inputs {
+  margin-bottom: 25px; /* Increased margin bottom for better separation */
+}
+
+.name {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px; /* Added margin right for better alignment */
+}
+
+.inputs input {
+  flex: 2;
+  padding: 12px; /* Increased padding for better input appearance */
+  border: 2px solid #ccc; /* Thicker border for input fields */
+  border-radius: 8px; /* Slightly rounded corners */
+  width: 100%;
+  transition: border-color 0.3s ease; /* Added transition effect for better interaction */
+}
+
+.inputs input:focus {
+  border-color: #5ba6d2; /* Change border color on focus */
+}
+
+button {
+  padding: 12px 24px; /* Increased padding for better button appearance */
+  background-color: #5ba6d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0c0d0d;
+}
+
+/* Table container styles */
+.table-container {
+  max-width: 100%;
+  margin: 50px auto; /* Increased margin for better spacing */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Increased margin top for better separation */
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 15px; /* Increased padding for better appearance */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Button in table */
+td > button {
+  padding: 8px 16px; /* Increased padding for better button appearance */
+  background-color: #36bf17;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+td > button:hover {
+  background-color: #36bf17;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
